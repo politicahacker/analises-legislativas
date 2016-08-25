@@ -1,14 +1,16 @@
-# analises-legislativas
+## Análises Legislativas
 Análises sobre a realidade da Câmara Municipal de São Paulo com muitos dados
 públicos....
 
-Neste repositório estamos utilizando GIT LFS (Large File System) para gerenciar
+##ATENÇÃO##
+Neste repositório estamos utilizando **GIT LFS** (Large File System) para gerenciar
 os arquivos de dados (grandes).
 
 Para ver como instalar e como funciona visite:
 * https://git-lfs.github.com/ e
 * https://github.com/github/git-lfs
 
+## ORGANIZAÇÃO
 A tendência por aqui é usar R como linguagem de programação, mas podemos variar
 tranquilamente!
 
