@@ -1,0 +1,6 @@
+data/bens_candidatos.RData filter=lfs diff=lfs merge=lfs -text
+data/candidatos.RData filter=lfs diff=lfs merge=lfs -text
+raw_data/bens_candidatos_2012.csv.bz2 filter=lfs diff=lfs merge=lfs -text
+raw_data/bens_candidatos_2016.csv.bz2 filter=lfs diff=lfs merge=lfs -text
+raw_data/candidatos_2012.csv.bz2 filter=lfs diff=lfs merge=lfs -text
+raw_data/candidatos_2016.csv.bz2 filter=lfs diff=lfs merge=lfs -text
