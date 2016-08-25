@@ -21,3 +21,6 @@ No caso do TSE geralmente os dados vêm quebrados por estado e com encoding
 ISO-8859-1 (quando não um mais exótico), então estamos usando os scripts
 presentes em 'utils' para convertê-los para UTF-8 e unificá-los num único
 arquivo daquele 'tema'.
+
+Dados do TSE retirados de:
+http://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais
