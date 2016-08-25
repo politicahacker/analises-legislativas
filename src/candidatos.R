@@ -42,7 +42,7 @@ cclasses <- c(rep('character', 2), rep('integer', 2), rep('character', 4),
               # DESC_SIT_TOT_TURNO
               rep('character', 2 ) )
 
-cand_2012 <- fread('raw_candidatos_2012.csv', header = FALSE, sep = ';',
+cand_2012 <- fread('../raw_data/candidatos_2012.csv', header = FALSE, sep = ';',
                    stringsAsFactors = FALSE, dec = ',', data.table = F,
                    col.names = cnames, colClasses = cclasses)
 
@@ -96,7 +96,7 @@ cclasses <- c(rep('character', 2), rep('integer', 2), rep('character', 4),
               # DESPESA_MAX_CAMPANHA
               'numeric', 'integer', rep('character', 2) )
 
-cand_2016 <- fread('raw_candidatos_2016.csv', header = FALSE, sep = ';',
+cand_2016 <- fread('../raw_data/candidatos_2016.csv', header = FALSE, sep = ';',
                    stringsAsFactors = FALSE, dec = ',', data.table = F,
                    col.names = cnames, colClasses = cclasses)
 
@@ -132,7 +132,7 @@ candidatos <- candidatos %>%
     SIGLA_PARTIDO = as.factor(SIGLA_PARTIDO)
   )
   
-saveRDS(candidatos, file = 'candidatos.RData',  compress = 'bzip2')
+saveRDS(candidatos, file = '../data/candidatos.RData',  compress = 'bzip2')
 
 ###############################
 # BENS DOS CANDIDATOS EM 2012 #
@@ -147,11 +147,11 @@ cclasses <- c(rep('character', 2), 'integer', rep('character', 2), 'integer64',
               # CD_TIPO_BEM_CANDIDATO
               'integer', rep('character', 2), 'numeric', rep('character', 2))
 
-bens_2012 <- fread('raw_data/bens_candidatos_2012.csv', header = FALSE, sep = ';',
+bens_2012 <- fread('../raw_data/bens_candidatos_2012.csv', header = FALSE, sep = ';',
                    stringsAsFactors = FALSE, dec = ',', data.table = F,
                    col.names = cnames, colClasses = cclasses)
 
-bens_2016 <- fread('raw_data/bens_candidatos_2016.csv', header = FALSE, sep = ';',
+bens_2016 <- fread('../raw_data/bens_candidatos_2016.csv', header = FALSE, sep = ';',
                    stringsAsFactors = FALSE, dec = ',', data.table = F,
                    col.names = cnames, colClasses = cclasses)
 
@@ -167,4 +167,4 @@ bens <- rbind(bens_2012, bens_2016) %>%
 
 rm(bens_2012, bens_2016)
 
-saveRDS(bens, file = 'bens_candidatos2.RData', compress = 'bzip2')
+saveRDS(bens, file = '../data/bens_candidatos.RData', compress = 'bzip2')
